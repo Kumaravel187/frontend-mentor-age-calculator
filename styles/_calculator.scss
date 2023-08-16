@@ -19,7 +19,7 @@ main {
   &__heading {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
     .head {
       label {
         display: block;
@@ -32,10 +32,13 @@ main {
       }
       input {
         width: 100%;
-        border: 2px solid $Lightgrey;
+        border: 1px solid $Lightgrey;
         height: 3.125rem;
-        padding-left: 0.5rem;
+        padding: 0.5rem 0rem 0.5rem 0.5rem;
         border-radius: 0.75rem;
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        font-weight: 800;
       }
     }
     .head:nth-child(2),
@@ -45,7 +48,32 @@ main {
   }
 
   &__button {
-    border: 1px solid black;
+    position: relative;
+    border-bottom: 1px solid $Lightgrey;
+    margin-bottom: 4.6875rem;
+
+    a::before {
+      // center before image
+      position: absolute;
+      content: "";
+      top: -1.9rem;
+      right: 0;
+      bottom: 0;
+      // Center element and must set the translateX position to -50%
+      left: 50%;
+      width: 3.75rem;
+      height: 3.75rem;
+      background-image: url(/assets/images/icon-arrow.svg);
+      background-position: center;
+      // Gives it a padding like feel
+      background-size: 2rem;
+      background-repeat: no-repeat;
+      background-color: $Purple;
+      border-radius: 50%;
+      // Center element and must set the left position to 50%
+      transform: translateX(-50%);
+      cursor: pointer;
+    }
   }
 
   &__main {
