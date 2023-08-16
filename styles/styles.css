@@ -10,6 +10,8 @@ html {
 *::after {
   box-sizing: inherit; /* Inherit the 'box-sizing' property from the parent */
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Basic styling for the body of the webpage */
@@ -74,7 +76,7 @@ main {
 .calculator__button {
   position: relative;
   border-bottom: 1px solid hsl(0, 0%, 86%);
-  margin-bottom: 4.6875rem;
+  margin-bottom: 4rem;
 }
 .calculator__button a::before {
   position: absolute;
@@ -95,5 +97,12 @@ main {
   cursor: pointer;
 }
 .calculator__main {
-  border: 1px solid black;
+  font-size: 2rem;
+}
+.calculator__main h2 {
+  text-transform: capitalize;
+}
+.calculator__main h2 span.purple {
+  color: hsl(259, 100%, 65%);
+  margin-right: 0.9rem;
 }/*# sourceMappingURL=styles.css.map */

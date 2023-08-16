@@ -50,7 +50,7 @@ main {
   &__button {
     position: relative;
     border-bottom: 1px solid $Lightgrey;
-    margin-bottom: 4.6875rem;
+    margin-bottom: 4rem;
 
     a::before {
       // center before image
@@ -77,6 +77,15 @@ main {
   }
 
   &__main {
-    border: 1px solid black;
+    font-size: $fontsize;
+
+    h2 {
+      text-transform: capitalize;
+
+      span.purple {
+        color: $Purple;
+        margin-right: 0.9rem;
+      }
+    }
   }
 }

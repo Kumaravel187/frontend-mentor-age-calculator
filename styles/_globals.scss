@@ -10,6 +10,8 @@ html {
 *::after {
   box-sizing: inherit; /* Inherit the 'box-sizing' property from the parent */
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Basic styling for the body of the webpage */
