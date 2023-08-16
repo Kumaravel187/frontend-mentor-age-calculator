@@ -1,0 +1,30 @@
+/* Set the base styling for the entire HTML document */
+html {
+  box-sizing: border-box;
+  font-size: 100%; /* Reset font size for consistent sizing */
+}
+
+/* Apply the 'box-sizing' property to all elements and their pseudo-elements */
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* Inherit the 'box-sizing' property from the parent */
+  font-family: "Poppins", sans-serif;
+}
+
+/* Basic styling for the body of the webpage */
+body {
+  min-height: 100vh; /* Ensure the body covers at least the viewport height */
+  margin: 0; /* Remove default margin to avoid unexpected spacing */
+  padding: 0; /* Vertical and horizontal padding for the content area */
+  background-color: hsl(0, 100%, 67%);
+}
+
+/* Reset margins for various heading elements */
+h1,
+h2,
+h3 {
+  margin-top: 0; /* Remove default top margin to avoid spacing inconsistencies */
+}
+
+/* Media query for larger screens (min-width: 56.25rem) *//*# sourceMappingURL=styles.css.map */
