@@ -14,10 +14,8 @@ html {
 
 /* Basic styling for the body of the webpage */
 body {
-  min-height: 100vh; /* Ensure the body covers at least the viewport height */
   margin: 0; /* Remove default margin to avoid unexpected spacing */
   padding: 0; /* Vertical and horizontal padding for the content area */
-  background-color: hsl(0, 100%, 67%);
 }
 
 /* Reset margins for various heading elements */
@@ -27,4 +25,52 @@ h3 {
   margin-top: 0; /* Remove default top margin to avoid spacing inconsistencies */
 }
 
-/* Media query for larger screens (min-width: 56.25rem) *//*# sourceMappingURL=styles.css.map */
+/* Media query for larger screens (min-width: 56.25rem) */
+main {
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5.3125rem 1.125rem;
+}
+
+.calculator {
+  width: 21.875rem;
+  height: 31.25rem;
+  max-width: 100%;
+  padding: 3.125rem 2rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem 1rem 10rem 1rem;
+}
+.calculator__heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.calculator__heading .head label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.2rem;
+  color: hsl(0, 1%, 44%);
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+.calculator__heading .head input {
+  width: 100%;
+  border: 2px solid hsl(0, 0%, 86%);
+  height: 3.125rem;
+  padding-left: 0.5rem;
+  border-radius: 0.75rem;
+}
+.calculator__heading .head:nth-child(2),
+.calculator__heading .head:last-child {
+  padding-left: 1rem;
+}
+.calculator__button {
+  border: 1px solid black;
+}
+.calculator__main {
+  border: 1px solid black;
+}/*# sourceMappingURL=styles.css.map */

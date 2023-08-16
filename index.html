@@ -28,28 +28,32 @@
     </style>
   </head>
   <body>
-    <section class="calculator">
-      <div class="__calculator-heading">
-        <div class="head dayEl">
-          <label for="day">day</label>
-          <input type="number" name="day" id="day" class="input" />
+    <main>
+      <section class="calculator">
+        <div class="calculator__heading">
+          <div class="head dayEl">
+            <label for="day">day</label>
+            <input type="number" name="day" id="day" class="input" />
+          </div>
+          <div class="head monthEl">
+            <label for="month">month</label>
+            <input type="number" name="day" id="month" class="input" />
+          </div>
+          <div class="head yearEl">
+            <label for="day">year</label>
+            <input type="number" name="year" id="year" class="input" />
+          </div>
         </div>
-        <div class="head monthEl">
-          <label for="month">month</label>
-          <input type="number" name="day" id="month" class="input" />
+        <div class="calculator__button">
+          <button type="button"></button>
         </div>
-        <div class="head yearEl">
-          <label for="day">year</label>
-          <input type="number" name="year" id="year" class="input" />
+        <div class="calculator__main">
+          <h2><span>--</span>days</h2>
+          <h2><span>--</span>months</h2>
+          <h2><span>--</span>years</h2>
         </div>
-      </div>
-      <div class="__calculator-button"></div>
-      <div class="__calculator-main">
-        <h2><span>--</span>days</h2>
-        <h2><span>--</span>months</h2>
-        <h2><span>--</span>years</h2>
-      </div>
-    </section>
+      </section>
+    </main>
     <!-- Day DD Month MM Year YYYY -- years -- months -- days -->
 
     <div class="attribution">

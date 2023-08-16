@@ -1,0 +1,54 @@
+// Mobile first
+main {
+  min-height: 100vh;
+  background-color: $Offwhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5.3125rem 1.125rem;
+}
+
+.calculator {
+  //   border: 1px solid black;
+  width: 21.875rem;
+  height: 31.25rem;
+  max-width: 100%;
+  padding: 3.125rem 2rem;
+  background-color: $White;
+  border-radius: 1rem 1rem 10rem 1rem;
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    .head {
+      label {
+        display: block;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        letter-spacing: 0.2rem;
+        color: $Smokeygrey;
+        font-weight: 700;
+        margin-bottom: 0.3rem;
+      }
+      input {
+        width: 100%;
+        border: 2px solid $Lightgrey;
+        height: 3.125rem;
+        padding-left: 0.5rem;
+        border-radius: 0.75rem;
+      }
+    }
+    .head:nth-child(2),
+    .head:last-child {
+      padding-left: 1rem;
+    }
+  }
+
+  &__button {
+    border: 1px solid black;
+  }
+
+  &__main {
+    border: 1px solid black;
+  }
+}

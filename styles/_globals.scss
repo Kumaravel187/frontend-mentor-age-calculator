@@ -14,11 +14,10 @@ html {
 
 /* Basic styling for the body of the webpage */
 body {
-  min-height: 100vh; /* Ensure the body covers at least the viewport height */
+  // min-height: 100vh; /* Ensure the body covers at least the viewport height */
   margin: 0; /* Remove default margin to avoid unexpected spacing */
   padding: 0; /* Vertical and horizontal padding for the content area */
   //   font-family: ; /* Set the primary font family */
-  background-color: $Lightred;
 }
 
 /* Reset margins for various heading elements */
