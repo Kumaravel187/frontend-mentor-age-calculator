@@ -53,21 +53,33 @@ main {
 .calculator__heading .head label {
   display: block;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   letter-spacing: 0.2rem;
   color: hsl(0, 1%, 44%);
   font-weight: 700;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.4rem;
 }
 .calculator__heading .head input {
   width: 100%;
   border: 1px solid hsl(0, 0%, 86%);
-  height: 3.125rem;
-  padding: 0.5rem 0rem 0.5rem 1rem;
-  border-radius: 0.75rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 800;
+}
+.calculator__heading .head input::-moz-placeholder {
+  color: hsl(0, 0%, 86%);
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+.calculator__heading .head input::placeholder {
+  color: hsl(0, 0%, 86%);
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+.calculator__heading .head small {
+  font-size: 0.5rem;
 }
 .calculator__heading .head:nth-child(2),
 .calculator__heading .head:last-child {
@@ -117,9 +129,26 @@ main {
   .calculator__heading {
     margin-right: 8rem;
   }
+  .calculator__heading .head input {
+    padding: 1.25rem 1rem 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+  }
+  .calculator__heading .head input::-moz-placeholder {
+    font-size: 1.6rem;
+  }
+  .calculator__heading .head input::placeholder {
+    font-size: 1.6rem;
+  }
+  .calculator__heading .head label {
+    font-size: 0.65rem;
+  }
   .calculator__heading .head label,
   .calculator__heading .head input {
     width: 90%;
+  }
+  .calculator__heading .head small {
+    font-size: 0.65rem;
   }
   .calculator__heading .head:nth-child(2),
   .calculator__heading .head:last-child {
@@ -132,8 +161,14 @@ main {
     font-size: 2.5rem;
   }
 }
+.error-outline {
+  outline: 1px solid hsl(0, 100%, 67%);
+}
+
+.success-outline {
+  outline: 1px solid hsl(259, 100%, 65%);
+}
+
 .error {
-  color: hsl(0, 100%, 67%);
-  font-weight: 700;
-  visibility: hidden;
+  color: hsl(0, 100%, 67%) !important;
 }/*# sourceMappingURL=styles.css.map */

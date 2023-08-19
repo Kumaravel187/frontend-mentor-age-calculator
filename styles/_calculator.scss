@@ -24,21 +24,31 @@ main {
       label {
         display: block;
         text-transform: uppercase;
-        font-size: 0.7rem;
+        font-size: 0.5rem;
         letter-spacing: 0.2rem;
         color: $Smokeygrey;
         font-weight: 700;
-        margin-bottom: 0.3rem;
+        margin-bottom: 0.4rem;
       }
       input {
         width: 100%;
         border: 1px solid $Lightgrey;
-        height: 3.125rem;
-        padding: 0.5rem 0rem 0.5rem 1rem;
-        border-radius: 0.75rem;
+        // height: 3.125rem;
+        padding: 0.8rem;
+        border-radius: 0.5rem;
         font-family: "Poppins", sans-serif;
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: 800;
+
+        &::placeholder {
+          color: $Lightgrey;
+          font-weight: 800;
+          font-size: 0.8rem;
+        }
+      }
+
+      small {
+        font-size: 0.5rem;
       }
     }
     .head:nth-child(2),
@@ -101,9 +111,27 @@ main {
       //   border: 1px solid red;
       margin-right: 8rem;
       .head {
+        input {
+          padding: 1.25rem 1rem 1rem;
+          font-size: 1.2rem;
+          margin-bottom: 0.2rem;
+
+          &::placeholder {
+            font-size: 1.6rem;
+          }
+        }
+
+        label {
+          font-size: 0.65rem;
+        }
+
         label,
         input {
           width: 90%;
+        }
+
+        small {
+          font-size: 0.65rem;
         }
       }
       .head:nth-child(2),
@@ -124,8 +152,14 @@ main {
   }
 }
 
+.error-outline {
+  outline: 1px solid $Lightred;
+}
+
+.success-outline {
+  outline: 1px solid $Purple;
+}
+
 .error {
-  color: $Lightred;
-  font-weight: 700;
-  visibility: hidden;
+  color: $Lightred !important;
 }
