@@ -32,11 +32,11 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./image.png" alt="" width="200" />
-<img src="./image-1.png" alt="" width="200" />
-<img src="./image-2.png" alt="" width="200" />
-<img src="./image-3.png" alt="" width="200" />
-<img src="./image-4.png" alt="" width="200" />
+<img src="./image.png" alt="test" width="200" />
+<img src="./image-1.png" alt="test" width="200" />
+<img src="./image-2.png" alt="test" width="200" />
+<img src="./image-3.png" alt="test" width="200" />
+<img src="./image-4.png" alt="test" width="200" />
 
 ### Links
 
