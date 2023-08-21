@@ -34,7 +34,7 @@ function validateInput(input) {
 
   if (inputValue === "") {
     showErrorMessage(input);
-    input.nextElementSibling.textContent = `This field is required!`;
+    input.nextElementSibling.textContent = `Field required!`;
     return false;
   } else {
     showSuccessMessage(input);
@@ -65,7 +65,7 @@ function validateDay(day) {
   } else {
     showErrorMessage(day);
     const dayInputElName = day.name;
-    day.nextElementSibling.textContent = `Must be a valid ${dayInputElName}!`;
+    day.nextElementSibling.textContent = `Use valid ${dayInputElName}!`;
   }
 }
 
@@ -78,7 +78,7 @@ function validateMonth(month) {
   } else {
     showErrorMessage(month);
     const monthInputElName = month.name;
-    month.nextElementSibling.textContent = `Must be a valid ${monthInputElName}!`;
+    month.nextElementSibling.textContent = `Use valid ${monthInputElName}!`;
   }
 }
 
@@ -91,7 +91,7 @@ function validateYear(year) {
   } else {
     showErrorMessage(year);
     const yearInputElName = year.name;
-    year.nextElementSibling.textContent = `Must be a valid ${yearInputElName}!`;
+    year.nextElementSibling.textContent = `Use valid ${yearInputElName}!`;
   }
 }
 
