@@ -110,6 +110,10 @@ main {
       }
     }
   }
+  // Styling for success outline
+  .success-outline {
+    outline: none;
+  }
 }
 
 // Media query for larger screens
@@ -168,17 +172,17 @@ main {
     &__main {
       font-size: $fontsize-dt;
     }
+
+    // Styling for success outline
+    .success-outline {
+      outline: 1px solid $Purple;
+    }
   }
 }
 
 // Styling for error outline
 .error-outline {
   outline: 1px solid $Lightred;
-}
-
-// Styling for success outline
-.success-outline {
-  outline: 1px solid $Purple;
 }
 
 // Styling for error text
