@@ -96,6 +96,6 @@ Addressing these aspects could be seamlessly integrated into my ongoing developm
 
 ### Useful Resources
 
-https://www.w3schools.com/jsref/jsref_foreach.asp
-https://developer.mozilla.org/en-US/docs/Web/API/Element/nextElementSibling
-https://www.scaler.com/topics/get-current-date-in-javascript/
+- https://www.w3schools.com/jsref/jsref_foreach.asp
+- https://developer.mozilla.org/en-US/docs/Web/API/Element/nextElementSibling
+- https://www.scaler.com/topics/get-current-date-in-javascript/
