@@ -122,6 +122,9 @@ main {
 .calculator .success-outline {
   outline: none;
 }
+.calculator .error-outline {
+  outline: none;
+}
 
 @media (min-width: 56.25rem) {
   .calculator {
@@ -166,11 +169,10 @@ main {
   .calculator .success-outline {
     outline: 1px solid hsl(259, 100%, 65%);
   }
+  .calculator .error-outline {
+    outline: 1px solid hsl(0, 100%, 67%);
+  }
 }
-.error-outline {
-  outline: 1px solid hsl(0, 100%, 67%);
-}
-
 .error {
   color: hsl(0, 100%, 67%) !important;
 }/*# sourceMappingURL=styles.css.map */

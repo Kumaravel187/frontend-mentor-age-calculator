@@ -114,6 +114,11 @@ main {
   .success-outline {
     outline: none;
   }
+
+  // Styling for error outline
+  .error-outline {
+    outline: none;
+  }
 }
 
 // Media query for larger screens
@@ -177,12 +182,12 @@ main {
     .success-outline {
       outline: 1px solid $Purple;
     }
-  }
-}
 
-// Styling for error outline
-.error-outline {
-  outline: 1px solid $Lightred;
+    // Styling for error outline
+    .error-outline {
+      outline: 1px solid $Lightred;
+    }
+  }
 }
 
 // Styling for error text
