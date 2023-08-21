@@ -1,89 +1,88 @@
 <!DOCTYPE html>
-< ,lnkji
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,800&display=swap"
-      rel="stylesheet"
-    />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="/styles/styles.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,800&display=swap"
+    rel="stylesheet"
+  />
 
-    <title>Frontend Mentor | Age calculator app</title>
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./assets/images/favicon-32x32.png"
+  />
+  <link rel="stylesheet" href="/styles/styles.css" />
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution { font-size: 11px; text-align: center; }
-      .attribution a { color: hsl(228, 45%, 44%); }
-    </style>
-  </head>
-  <body>
-    <main>
-      <section class="calculator">
-        <div class="calculator__heading">
-          <div class="head dayEl">
-            <label for="day">day</label>
-            <input
-              type="number"
-              name="day"
-              id="day"
-              class="input"
-              placeholder="DD"
-            />
-            <small class="error"></small>
-          </div>
-          <div class="head monthEl">
-            <label for="month">month</label>
-            <input
-              type="number"
-              name="month"
-              id="month"
-              class="input"
-              placeholder="MM"
-            />
-            <small class="error"></small>
-          </div>
-          <div class="head yearEl">
-            <label for="year">year</label>
-            <input
-              type="number"
-              name="year"
-              id="year"
-              class="input"
-              placeholder="YYYY"
-            />
-            <small class="error"></small>
-          </div>
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="calculator">
+      <div class="calculator__heading">
+        <div class="head dayEl">
+          <label for="day">day</label>
+          <input
+            type="number"
+            name="day"
+            id="day"
+            class="input"
+            placeholder="DD"
+          />
+          <small class="error"></small>
         </div>
-        <div class="calculator__button">
-          <a id="btn"></a>
+        <div class="head monthEl">
+          <label for="month">month</label>
+          <input
+            type="number"
+            name="month"
+            id="month"
+            class="input"
+            placeholder="MM"
+          />
+          <small class="error"></small>
         </div>
-        <div class="calculator__main">
-          <h2><span id="yearInput" class="purple">--</span>years</h2>
-
-          <h2><span id="monthInput" class="purple">--</span>months</h2>
-          <h2><span id="dayInput" class="purple">--</span>days</h2>
+        <div class="head yearEl">
+          <label for="year">year</label>
+          <input
+            type="number"
+            name="year"
+            id="year"
+            class="input"
+            placeholder="YYYY"
+          />
+          <small class="error"></small>
         </div>
-      </section>
-    </main>
-    <!-- Day DD Month MM Year YYYY -- years -- months -- days -->
+      </div>
+      <div class="calculator__button">
+        <a id="btn"></a>
+      </div>
+      <div class="calculator__main">
+        <h2><span id="yearInput" class="purple">--</span>years</h2>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
-    <script src="/app/app.js"></script>
-  </body>
-</>
+        <h2><span id="monthInput" class="purple">--</span>months</h2>
+        <h2><span id="dayInput" class="purple">--</span>days</h2>
+      </div>
+    </section>
+  </main>
+  <!-- Day DD Month MM Year YYYY -- years -- months -- days -->
+
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      >Frontend Mentor</a
+    >. Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="/app/app.js"></script>
+</body>
