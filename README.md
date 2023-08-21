@@ -1,102 +1,101 @@
-# Frontend Mentor - Age calculator app
+# Frontend Mentor - Age calculator app solution
 
-![Design preview for the Age calculator app coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of Contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The Challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My Process](#my-process)
+  - [Built With](#built-with)
+  - [What I Learned](#what-i-learned)
+  - [Continued Development](#continued-development)
+  - [Useful Resources](#useful-resources)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a decent understanding of HTML, CSS and JavaScript.**
+This is a simple accordion challenge from frontend mentor. It uses the following technologies, html, scss and vanilla javascript.
 
-## The challenge
+### The Challenge
 
-Your challenge is to build out this age calculator app and get it looking as close to the design as possible.
+app should be able to:
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+- Validate if all fields have a value
+- Validate if each field contains a usable value
 
-Your users should be able to: 
+Users should be able to:
 
-- View an age in years, months, and days after submitting a valid date through the form
-- Receive validation errors if:
-  - Any field is empty when the form is submitted
-  - The day number is not between 1-31
-  - The month number is not between 1-12
-  - The year is in the future
-  - The date is invalid e.g. 31/04/1991 (there are 30 days in April)
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
-- **Bonus**: See the age numbers animate to their final number when the form is submitted
+- To type in the respective input columns
+- Generate Age
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+<img src="./image.png" alt="" width="200" />
+<img src="./image-1.png" alt="" width="200" />
+<img src="./image-2.png" alt="" width="200" />
+<img src="./image-3.png" alt="" width="200" />
+<img src="./image-4.png" alt="" width="200" />
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### Links
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+- Solution URL:
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## My Process
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+I tackled this challenge through a systematic approach. I began by establishing the necessary HTML structure for the application. Subsequently, I focused on crafting the mobile view of the application, ensuring a responsive and user-friendly design. As I moved forward, I devoted my attention to refining the styling for the desktop view, striving for a polished and cohesive appearance.
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+To ensure the functionality of the application, I conducted research on how to obtain a date object, a crucial component of the logic I intended to implement using JavaScript. This research phase enabled me to gain a comprehensive understanding of the concept before seamlessly integrating it into the codebase.
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+### Built With
 
-## Building your project
+- HTML5 and Semantic Markup
+- SCSS with Flexbox and Media Queries
+- Vanilla JavaScript for Interactivity
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### What I Learned
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+During this project, I learned how to create a responsive age calculator using HTML, SCSS, and JavaScript. Some key takeaways include:
 
-## Deploying your project
+- Implementing a mobile-first approach in design and development
+- Utilizing flexbox for layout and alignment of elements
+- Enhancing user interactivity with JavaScript event listeners
+- Managing content visibility through class toggling
+- Usage of foreach array array
+- Understadning how a new date object can be created to retrieve the day, month and current year
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+I am most proud of figuring out how validate if the input field is valid first before checking if the day, month and year values are valid
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+```javascript
+// Add a click event listener to the button
+btn.addEventListener("click", function () {
+  // Validate all input elements before proceeding
+  if (!validateAllInputs()) {
+    return; // Stop execution if any input is invalid
+  }
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+```
 
-## Create a custom `README.md`
+I am also proud on identifying how I can add classes to elements next to it using the previous and next elementsibling methods.
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+```javascript
+ inp.classList.add("success-outline");
+  inp.classList.remove("error-outline");
+  inp.previousElementSibling.classList.remove("error");
+  inp.nextElementSibling.textContent = "";
+```
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+### Continued Development
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+I omitted the implementation of logic for testing the existence of the complete user date value. I faced uncertainty about the methods to validate the authenticity of the full date input.
 
-## Submitting your solution
+Moreover, I haven't yet incorporated a mechanism to handle situations where the provided values are invalid. Currently, when an incorrect value is entered, "NAN" appears, without a safeguard to prevent its display when inaccuracies occur.
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+Addressing these aspects could be seamlessly integrated into my ongoing development process. By refining the logic to detect valid input and devising a strategy to handle invalid values, I aim to enhance the overall robustness and user experience of the application in the near future.
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+### Useful Resources
 
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+https://www.w3schools.com/jsref/jsref_foreach.asp
+https://developer.mozilla.org/en-US/docs/Web/API/Element/nextElementSibling
+https://www.scaler.com/topics/get-current-date-in-javascript/
