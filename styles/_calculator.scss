@@ -22,7 +22,8 @@ main {
   &__heading {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+    padding: 1rem 0;
 
     // Individual header elements
     .head {
@@ -44,6 +45,7 @@ main {
         font-family: "Poppins", sans-serif;
         font-size: 0.8rem;
         font-weight: 800;
+        margin-bottom: -0.5rem;
 
         &::placeholder {
           color: $Lightgrey;
@@ -53,7 +55,8 @@ main {
       }
 
       small {
-        font-size: 0.2rem;
+        font-size: 0.35rem;
+        // border: 1px solid red;
       }
     }
     // Spacing adjustments for specific header elements
