@@ -80,7 +80,7 @@ main {
   font-size: 0.8rem;
 }
 .calculator__heading .head small {
-  font-size: 0.35rem;
+  font-size: 0.35rem !important;
 }
 .calculator__heading .head:nth-child(2),
 .calculator__heading .head:last-child {
